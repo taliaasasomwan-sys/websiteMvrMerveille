@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    background: rgb(177, 177, 177);
+ 
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  flex-direction: column;
+}
+
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+}
+.logo img {
+  height: 90px;
+}
+nav{
+    margin-top: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  flex-direction: column;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+  color: #0077cc;
+}
+
+h1{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #430f0f;
+display: flex;
+justify-content: center;
+}
+
+header{
+background-color: rgb(177, 177, 177);
+text-align: center;
+padding: 5px 0;
+border-radius: 20px;
+position: relative;
+z-index: 10;
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    width: 200px;
+    border: 1px solid #ddd;
+  }
+
+  nav a {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    flex-direction: column;
+  }
+
+
+  .menu-toggle{
+    display: block;
+  }
+}
+
+.banner {
+  background-image: url('appartement.webp');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.banner-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.banner h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.actie-button {
+  background: #7d7157;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  
+}
+
+.actie-button:hover {
+  background: #bdb6ac;
+}
