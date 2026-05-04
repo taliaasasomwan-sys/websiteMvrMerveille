@@ -424,3 +424,48 @@ nav a.active {
   color: #7d7157;
   border-bottom: 2px solid #7d7157;
 }
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
+}
+
+.arrow.left {
+  left: 20px;
+}
+
+.arrow.right {
+  right: 20px;
+}
+
+.arrow:hover {
+  color: #ccc;
+}
+
+
+/*taal switch*/
+.langswitch {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.langswitch a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+    transition: color 0.3s ease;
+    
+}
+
+.langswitch a:hover {
+  color: #7d7157;
+}
+

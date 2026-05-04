@@ -6,6 +6,12 @@
     <title>Appartement – Rhodania 55</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.ico">
+    
+   <link rel="alternate" hreflang="nl" href="index.html">  <!-- helpt Google begrijpen dat je site meertalig is. -->
+   <link rel="alternate" hreflang="en" href="indexen.html">
+   <link rel="alternate" hreflang="fr" href="indexfr.html">
+   <link rel="alternate" hreflang="de" href="indexde.html">
+
 </head>
 <body>
 
@@ -63,12 +69,12 @@
     <h2>Prachtig familie appartement met modern interieur en centrale ligging</h2>
 
     <p>Tussen de langlaufloipe en de trainingslift Alpenrose ligt Appartementengebouw Rhodania.
-    In de zomer verandert de Langlauf-baan in een prachtige golfbaan en transformeert de
-    trainingspiste zich tot een kinderspeeltuin. Met slechts 30 seconden lopen naar beide
+    In de zomer verandert de Langlauf-baan in een <strong> prachtige golfbaan</strong> en transformeert de
+    trainingspiste zich tot een <strong> kinderspeeltuin.</strong> Met slechts 30 seconden lopen naar beide
     toeristische attracties van Riederalp centrum, biedt Rhodania 55 de perfecte locatie voor
     een ski- of golfvakantie.</p>
 
-    <p>Het appartement ligt op de eerste verdieping van het gebouw. Bij binnenkomst vindt u een
+    <p>Het appartement ligt op de<strong> eerste verdieping</strong> van het gebouw. Bij binnenkomst vindt u een
     hal die de slaapkamer, de separate badkamer en het woongedeelte met elkaar verbindt. De
     open woonkamer biedt een comfortabele tweepersoonsslaapbank, televisie, eethoek en een
     volledig uitgeruste keuken. De woonkamer biedt toegang tot het balkon op het zuiden met
@@ -148,6 +154,9 @@
   <!-- LIGHTBOX -->
   <div id="lightbox" onclick="closeLightbox()">
     <img id="lightbox-img" src="" alt="">
+  <span class="arrow left" onclick="prevImage(event)"> ❮ </span>
+  <img id="lightbox-img" src="" alt="">
+  <span class="arrow right" onclick="nextImage(event)"> ❯ </span>
   </div>
 
   <script src="script.js"></script>
