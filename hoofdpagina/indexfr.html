@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhodania 55</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
 
 <link rel="alternate" hreflang="nl" href="index.html">
-<link rel="alternate" hreflang="en" href="indexen.html">
-<link rel="alternate" hreflang="fr" href="indexfr.html">
-<link rel="alternate" hreflang="de" href="indexde.html">
+<link rel="alternate" hreflang="en" href="index-en.html">
+<link rel="alternate" hreflang="fr" href="index-fr.html">
+<link rel="alternate" hreflang="de" href="index-de.html">
 </head>
 <body>
 
@@ -19,15 +19,15 @@
 
 <div class="langswitch">
   <a href="index.html">NL</a>
-  <a href="indexen.html">EN</a>
-  <a href="indexfr.html">FR</a>
-  <a href="indexde.html">DE</a>
+  <a href="index-en.html">EN</a>
+  <a href="index-fr.html" class="active">FR</a>
+  <a href="index-de.html">DE</a>
 </div>
 </div>
 
 <div class="headertop">
 <div class="logo-left">
-<img src="Loggo.png">
+<img src="images/Loggo.png">
 </div>
 
 
@@ -57,12 +57,32 @@
 <section class="info">
 <div class="info-box">
 
-<div class="info-item"><span>1 Chambre</span></div>
-<div class="info-item"><span>2 salles de bains</span></div>
-<div class="info-item"><span>2–4 Personnes</span></div>
-<div class="info-item"><span>48 m² Surface</span></div>
+<div class="info-item">
+  <img src="images/Bed icon.jpg" alt="Slaapkamer">
+  <span>1 Chambre</span></div>
 
+<div class="info-item">
+  <img src="images/Shower Icon.jpg" alt="Badkamer">
+  <span>2 salles de bains</span></div>
+<div class="info-item">
+   <img src="images/downloads (4).jpg" alt="Personen">
+  <span>2–4 Personnes</span></div>
+
+<div class="info-item">
+  <img src="images/m2icon.jpg" alt="Oppervlakte">
+  <span>48 m² Surface</span></div>
 </div>
+</section>
+
+<section class="gallery">
+<h2>L’appartement</h2>
+
+   <div class="gallery-grid">
+    <img src="images/woonkamer.webp" alt="Woonkamer" onclick="openImage(this)">
+    <img src="images/slaapkamer.webp" alt="Slaapkamer" onclick="openImage(this)">
+    <img src="images/keuken.webp" alt="Keuken" onclick="openImage(this)">
+    <img src="images/douche.webp" alt="Badkamer" onclick="openImage(this)">
+  </div>
 </section>
 
 </body>
