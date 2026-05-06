@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environs - Rhodania 55</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style (2).css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="alternate" hreflang="nl" href="omgeving.html">
+  <link rel="alternate" hreflang="en" href="omgeving-en.html">
+  <link rel="alternate" hreflang="fr" href="omgeving-fr.html">
+  <link rel="alternate" hreflang="de" href="omgeving-de.html">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="langswitch">
+      <a href="omgeving.html">NL</a>
+      <a href="omgeving-en.html">EN</a>
+      <a href="omgeving-fr.html" class="active">FR</a>
+      <a href="omgeving-de.html">DE</a>
+    </div>
+  </div>
+  <div class="headertop">
+    <div class="logo-left">
+      <img src="images/Loggo.png" alt="Rhodania 55 logo">
+    </div>
+    <h1 class="title">Rhodania 55 – Appartement de vacances à Riederalp</h1>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+  <nav id="nav">
+    <a href="index.html">Accueil</a>
+    <a href="appartement-fr.html">Appartement</a>
+    <a href="omgeving-fr.html" class="active">Environs</a>
+    <a href="#">Disponibilité</a>
+    <a href="contact-fr.html">Contact</a>
+  </nav>
+</header>
+
+<section class="banner" style="background-image: url('images/omgeving9.webp');">
+  <div class="banner-content">
+    <h2>Riederalp en toute saison</h2>
+    <p>Des pistes de ski aux randonnées estivales avec vue sur le glacier d'Aletsch</p>
+  </div>
+</section>
+
+<section class="omgeving-intro">
+  <h2>Découvrez les Alpes suisses</h2>
+  <p>Rhodania 55 est situé au cœur de Riederalp, un village de montagne sans voitures où la nature, la tranquillité et l'aventure se rejoignent.</p>
+</section>
+
+<section class="activiteiten">
+  <h2>Activités estivales</h2>
+  <div class="activiteiten-grid">
+    <div class="activiteit-card">
+      <img src="images/wandelen.webp" alt="Randonnée">
+      <h3>Randonnée</h3>
+      <p>Plus de 300 km de sentiers à travers les Alpes.</p>
+    </div>
+    <div class="activiteit-card">
+      <img src="images/GOLF3.jpg" alt="Golf">
+      <h3>Golf</h3>
+      <p>L'un des parcours de golf les plus élevés d'Europe.</p>
+    </div>
+    <div class="activiteit-card">
+      <img src="images/mountainbike.webp" alt="VTT">
+      <h3>VTT</h3>
+      <p>Sentiers exigeants avec vue panoramique.</p>
+    </div>
+  </div>
+</section>
+
+<section class="activiteiten">
+  <h2>Activités hivernales</h2>
+  <div class="activiteiten-grid">
+    <div class="activiteit-card">
+      <img src="images/ski2.webp" alt="Ski">
+      <h3>Ski</h3>
+      <p>Accès direct à de magnifiques pistes.</p>
+    </div>
+    <div class="activiteit-card">
+      <img src="images/langlaufen.jpg" alt="Ski de fond">
+      <h3>Ski de fond</h3>
+      <p>Pistes parfaitement entretenues.</p>
+    </div>
+    <div class="activiteit-card">
+      <img src="images/wandel.jpg" alt="Promenades hivernales">
+      <h3>Promenades hivernales</h3>
+      <p>Profitez du calme et des paysages enneigés.</p>
+    </div>
+  </div>
+</section>
+
+<section class="usp2">
+  <h2>Pourquoi venir hors saison de ski ?</h2>
+  <ul>
+    <li>Repos et détente</li>
+    <li>Prix plus bas</li>
+    <li>Moins d'affluence</li>
+    <li>Idéal pour la randonnée et le télétravail</li>
+  </ul>
+</section>
+
+<section class="gallery">
+  <h2>Les environs en images</h2>
+  <div class="gallery-grid-large">
+    <img src="images/omgeving1.jpg" alt="" onclick="openImage(this)">
+    <img src="images/omgeving2.jpg" alt="" onclick="openImage(this)">
+    <img src="images/omgeving3.jpg" alt="" onclick="openImage(this)">
+    <img src="images/omgeving4.jpg" alt="" onclick="openImage(this)">
+    <img src="images/omgeving5.jpg" alt="" onclick="openImage(this)">
+    <img src="images/omgeving6.jpg" alt="" onclick="openImage(this)">
+    <img src="images/omgeving7.jpg" alt="" onclick="openImage(this)">
+    <img src="images/omgeving8.jpg" alt="" onclick="openImage(this)">
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <span class="arrow left" onclick="prevImage(event)"> ❮ </span>
+  <img id="lightbox-img" src="" alt="">
+  <span class="arrow right" onclick="nextImage(event)"> ❯ </span>
+</div>
+
+<section class="omgeving-cta">
+  <h2>Réservez votre séjour dans les Alpes</h2>
+  <p>Découvrez Rhodania 55 en toute saison</p>
+  <a href="mailto:RHODANIA55@GMAIL.COM" class="actie-button">Vérifier la disponibilité</a>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">Rhodania 55</div>
+      <p class="footer-tagline">Appartement de vacances à Riederalp, Suisse.<br>Ski-in/ski-out · Vue sur le golf · Glacier d'Aletsch</p>
+    </div>
+    <div class="footer-nav">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="appartement-fr.html">Appartement</a></li>
+        <li><a href="omgeving-fr.html">Environs</a></li>
+        <li><a href="#">Disponibilité</a></li>
+        <li><a href="contact-fr.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:rhodania55@gmail.com">rhodania55@gmail.com</a>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:0475843778">0475 84 37 78</a>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Riederalp 55, Suisse</span>
+      </div>
+    </div>
+  </div>
+  <hr class="footer-divider">
+  <div class="footer-bottom">
+    <span>© 2026 Rhodania 55 — Tous droits réservés</span>
+    <div class="footer-bottom-links">
+      <a href="#">Confidentialité</a>
+      <a href="#">Conditions</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

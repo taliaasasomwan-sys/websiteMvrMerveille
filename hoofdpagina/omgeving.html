@@ -1,51 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>omgeving</title>
-    <link rel="stylesheet" href="css/style (2).css">
-    <link rel="icon" type="image/png" href="favicon.ico">
-    
-   <link rel="alternate" hreflang="nl" href="index.html">  <!-- helpt Google begrijpen dat je site meertalig is. -->
-   <link rel="alternate" hreflang="en" href="indexen.html">
-   <link rel="alternate" hreflang="fr" href="indexfr.html">
-   <link rel="alternate" hreflang="de" href="indexde.html">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omgeving - Rhodania 55</title>
+  <link rel="icon"  href="favicon.ico">
+  <link rel="stylesheet" href="css/style (2).css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="alternate" hreflang="nl" href="omgeving.html">  <!-- helpt Google begrijpen dat je site meertalig is. -->
+  <link rel="alternate" hreflang="en" href="omgeving-en.html">
+  <link rel="alternate" hreflang="fr" href="omgeving-fr.html">
+  <link rel="alternate" hreflang="de" href="omgeving-de.html">
 
 </head>
 <body>
-    <nav>
-  <a href="index.html">Home</a>
-  <a href="appartement.html">Appartement</a>
-  <a href="omgeving.html" class="active">Omgeving</a>
-  <a href="#">Beschikbaarheid</a>
-  <a href="#">Contact</a>
-</nav>
 
+<header>
+  <div class="container">
 
-<section class="banner" style="background-image: url('images/weide.jpg');">
-    <div class="banner-content">
-<h1>Omgeving & Activiteiten</h1>
+  <div class="langswitch">
+  <a href="omgeving.html" class="active">NL</a>
+  <a href="omgeving-en.html">EN</a>
+   <a href="omgeving-fr.html">FR</a>
+   <a href="omgeving-de.html">DE</a> 
+  </div>
+ </div> 
+ 
+ <div class="headertop"> 
+  <div class="logo-left"> 
+    <img src="images/Loggo.png" alt="Rhodania 55 logo">
+   </div>
 
-<h2>Zomer</h2>
-<ul>
-  <li>Wandelen</li>
-  <li>Golfen</li>
-  <li>Mountainbiken</li>
-</ul>
+    <h1 class="title">Rhodania 55 – Vakantieappartement in Riederalp</h1>
+     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+     </div>
+      <nav id="nav"> 
+        <a href="index.html">Home</a>
+         <a href="appartement.html">appartement</a>
+          <a href="omgeving.html" class="active">Omgeving</a>
+           <a href="#">Beschikbaarheid</a> <a href="contact.html">Contact</a>
+           </nav> 
+          </div> 
+        </header> 
+        
+        <section class="banner" style="background-image: url('images/nw7.JPG');">
+           <div class="banner-content"> 
+            <h2>Riederalp in elk seizoen</h2> 
+            <p>Van skipistes tot zomerwandelingen met uitzicht op de Aletschgletsjer</p>
+           </div>
+           </section> 
+           <section class="omgeving-intro"> 
+            <h2>Ontdek de Zwitserse Alpen</h2> 
+            <p> Rhodania 55 ligt in het hart van Riederalp,
+               een autovrij bergdorp waar natuur, rust en avontuur samenkomen. </p>
+               </section> <section class="activiteiten"> <h2>Zomeractiviteiten</h2>
 
-<h2>Winter</h2>
-<ul>
-  <li>Skiën</li>
-  <li>Snowboarden</li>
-  <li>Langlaufen</li>
-</ul>
+                 <div class="activiteiten-grid"> <div class="activiteit-card"> 
+                  <img src="images/wandelen.webp" alt=""> 
+                  <h3>Wandelen</h3> <p>Meer dan 300 km routes door de Alpen.</p> 
+                </div> 
+                <div class="activiteit-card">
+                   <img src="images/GOLF3.jpg" alt="">
+                    <h3>Golf</h3> <p>1 van de hoogste golfbaan van Europa.</p> 
+                  </div> <div class="activiteit-card"> 
+                    <img src="images/mountainbike.webp" alt="">
+                     <h3>Mountainbike</h3> <p>Uitdagende trails met panoramisch uitzicht.</p>
+                     </div> 
+                    </div> </section> <section class="activiteiten"> <h2>Winteractiviteiten</h2>
+                       <div class="activiteiten-grid"> 
+                        <div class="activiteit-card"> <img src="images/ski2.webp" alt=""> 
+                          <h3>Skiën</h3> <p>Direct toegang tot prachtige pistes.</p> </div>
+                           <div class="activiteit-card"> <img src="images/langlaufen.jpg" alt="">
+                             <h3>Langlaufen</h3> <p>Perfect onderhouden loipes.</p> </div>
+                              <div class="activiteit-card"> <img src="images/wandel.jpg" alt="">
+                                 <h3>Winterwandelingen</h3> <p>Geniet van rust en sneeuwlandschappen.</p>
+                                 </div> </div> </section> <section class="usp2">
+                                   <h2>Waarom ook buiten het skiseizoen?</h2>
+                                    <ul> <li>Rust en ontspanning</li> 
+                                      <li>Lagere prijzen</li>
+                                       <li>Minder drukte</li> 
+                                       <li>Perfect voor wandelen en remote work</li>
+                                       </ul> </section> <section class="gallery">
+                                         <h2>De omgeving in beeld</h2> <div class="gallery-grid-large">
+                                           <img src="images/omgeving1.jpg" alt="" onclick="openImage(this)">
+                                            <img src="images/omgeving2.jpg" alt="" onclick="openImage(this)">
+                                             <img src="images/omgeving3.jpg" alt="" onclick="openImage(this)">
+                                              <img src="images/omgeving4.jpg" alt="" onclick="openImage(this)">
+                                               <img src="images/omgeving5.jpg" alt="" onclick="openImage(this)">
+                                                <img src="images/omgeving6.jpg" alt=""onclick="openImage(this)">
+                                                 <img src="images/omgeving7.jpg" alt="" onclick="openImage(this)"> 
+                                                 
+                                                 
+                                                 <img src="images/omgeving8.jpg" alt="" onclick="openImage(this)"> 
+                                                </div> </section> 
+                                                <!-- LIGHTBOX -->
+                                                  <div id="lightbox" onclick="closeLightbox()"> 
+                                                    <span class="arrow left" onclick="prevImage(event)"> ❮ </span>
+                                                     <img id="lightbox-img" src="" alt="">
+                                                      <span class="arrow right" onclick="nextImage(event)"> ❯ </span>
+                                                     </div> <section class="omgeving-cta"> 
+                                                      <h2>Boek uw verblijf in de Alpen</h2> 
+                                                      <p>Ervaar Rhodania 55 in elk seizoen</p>
+                                                       <a href="mailto:RHODANIA55@GMAIL.COM" class="actie-button">
+                                                         Vraag beschikbaarheid aan </a> </section>
+                                                         <footer class="footer">
+  <div class="footer-inner">
 
-<section class="doelgroep">
-  <h2>Voor wie?</h2>
-  <p>Perfect voor families, koppels en natuurliefhebbers. Ideaal voor skiën, wandelen, mountainbiken of gewoon ontspannen in de bergen.</p>
-</section>
+    <div class="footer-brand">
+      <div class="footer-logo">Rhodania 55</div>
+      <p class="footer-tagline">Vakantieappartement in Riederalp, Zwitserland.<br>Ski-in/ski-out · Golfzicht · Aletschgletsjer</p>
+      
+    </div>
 
+    <div class="footer-nav">
+      <h4>Navigatie</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="appartement.html">Appartement</a></li>
+        <li><a href="omgeving.html">Omgeving</a></li>
+        <li><a href="#">Beschikbaarheid</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
 
-</body>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:rhodania55@gmail.com">rhodania55@gmail.com</a>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:0475843778">0475 84 37 78</a>
+      </div>
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+       <span>Riederalp 55, Zwitserland</span>
+   </div>
+   </div>
+
+  </div>
+
+  <hr class="footer-divider">
+
+  <div class="footer-bottom">
+    <span>© 2026 Rhodania 55 — Alle rechten voorbehouden</span>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy</a>
+      <a href="#">Voorwaarden</a>
+    </div>
+  </div>
+</footer>
+                                                       
+<script src="script.js"></script>                                                                                                             
+</body>                                                      
 </html>

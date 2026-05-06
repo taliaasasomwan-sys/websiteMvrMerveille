@@ -3,7 +3,8 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-family: Arial, sans-serif;
     background: rgb(177, 177, 177);
- 
+    overflow-x: hidden;
+    
 }
 
 img {
@@ -185,13 +186,17 @@ position: sticky;
 }
 
 .actie-button {
-  background: #7bae74;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
   display: inline-block;
-  margin-top: 15px;
+  background: linear-gradient(135deg, #7bae74, #5f8f58);
+  color: white;
+  padding: 16px 42px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+  transition: all 0.3s ease;  
 }
 
 .actie-button:hover {
@@ -273,8 +278,9 @@ position: sticky;
 
 .gallery-grid img {
   width: 100%;
-  height: auto; 
-  object-fit: cover;
+  height: 250px;       /* fixed height = zoom effect */
+  object-fit: cover;   /* crops + zooms */
+   object-position: 50% 70%;
 }
 
 
@@ -508,9 +514,6 @@ nav a.active {
   font-weight: bold;
 }
 
-body {
-  overflow-x: hidden;
-}
 
 .usp {
   padding: 80px 20px;
@@ -544,12 +547,12 @@ body {
   transform: translateY(-8px);
 }
 
-.usp-card span {
-  font-size: 42px;
+.usp-card i {
+  font-size: 38px;
+  color: #6f8a63;
+  margin-bottom: 20px;
   display: block;
-  margin-bottom: 15px;
 }
-
 .usp-card h3 {
   color: #430f0f;
   margin-bottom: 12px;
@@ -559,3 +562,329 @@ body {
   color: #666;
   line-height: 1.6;
 }
+
+.usp-card:hover i {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+.omgeving-intro {
+  text-align: center;
+  padding: 50px 20px;
+  background: white;
+}
+
+.activiteiten {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.activiteiten-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.activiteit-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.activiteit-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.activiteit-card h3 {
+  color: #430f0f;
+}
+
+.promo-seizoen {
+  background: #f5f5f5;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.omgeving-cta {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+
+.usp2 {
+  background: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.usp2 h2 {
+  color: #430f0f;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.usp2 ul {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.usp2 li {
+  margin: 12px 0;
+  padding-left: 30px;
+  font-size: 17px;
+  text-align: left;
+  position: relative;
+  color: #333;
+}
+
+/* icon */
+.usp2 li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #7bae74;
+  font-weight: bold;
+}
+
+.contact-info a {
+  color: #5f8f58;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info .actie-button {
+  color: white;
+}
+
+
+  .footer {
+  background: linear-gradient(135deg, #2e2e2e 0%, #3d3d3d 50%, #2a3d2a 100%);
+  color: #ccc;
+  margin-top: 60px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px 30px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.footer-brand .footer-logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.footer-brand .footer-tagline {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+
+
+.footer-nav h4,
+.footer-contact h4 {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 18px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 10px;
+}
+
+.footer-nav ul li a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-nav ul li a::before {
+  content: "→";
+  font-size: 12px;
+  color: #7bae74;
+  transition: transform 0.2s ease;
+}
+
+.footer-nav ul li a:hover { color: #fff; }
+.footer-nav ul li a:hover::before { transform: translateX(3px); }
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-contact-item i {
+  color: #7bae74;
+  font-size: 15px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.footer-contact-item a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-contact-item a:hover { color: #fff; }
+
+.footer-divider {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #666;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-bottom-links a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-bottom-links a:hover { color: #aaa; }
+
+/* Responsive footer */
+@media (max-width: 900px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .footer-brand { grid-column: 1 / -1; }
+}
+
+@media (max-width: 560px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    padding: 40px 24px 24px;
+    gap: 36px;
+  }
+  .footer-brand { grid-column: auto; }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 16px 24px;
+  }
+  .footer-bottom-links { justify-content: center; flex-wrap: wrap; }
+}
+
+/* Activiteiten grid (omgeving) */
+@media (max-width: 900px) {
+  .activiteiten-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .activiteiten-grid { grid-template-columns: 1fr; }
+  .activiteit-card img { height: 180px; }
+}
+
+/* Info strip op telefoon */
+@media (max-width: 600px) {
+  .info-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-item { width: 100%; max-width: 320px; justify-content: center; }
+}
+
+/* USP grid op telefoon */
+@media (max-width: 600px) {
+  .usp { padding: 50px 16px; }
+  .usp h2 { font-size: 26px; margin-bottom: 30px; }
+  .usp-grid { grid-template-columns: 1fr; }
+}
+
+/* Knop kleiner op telefoon */
+@media (max-width: 768px) {
+  .actie-button { font-size: 16px; padding: 12px 28px; }
+}
+
+/* ============================================================
+   PLAK DIT ONDERAAN je bestaande style (2).css
+   ============================================================ */
+
+/* Stop horizontale scroll — html mist nog overflow-x:hidden */
+html {
+  overflow-x: hidden;
+}
+
+/* Header border-radius op sticky element veroorzaakt overflow */
+@media (max-width: 768px) {
+  header {
+    border-radius: 0;
+  }
+}
+
+/* Langswitch absolute → valt buiten header op mobile */
+@media (max-width: 768px) {
+  .langswitch {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px 12px 0;
+  }
+}
+
+/* Nav dropdown: top:70px is vast, maar header hoogte varieert.
+   top:100% plakt altijd aan onderkant van de sticky header.  */
+@media (max-width: 768px) {
+  nav {
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
