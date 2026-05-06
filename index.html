@@ -4,18 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>website stages</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="css/style (2).css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+   <link rel="alternate" hreflang="nl" href="index.html">  <!-- helpt Google begrijpen dat je site meertalig is. -->
+   <link rel="alternate" hreflang="en" href="index-en.html">
+   <link rel="alternate" hreflang="fr" href="index-fr.html">
+   <link rel="alternate" hreflang="de" href="index-de.html">
+
 </head>
 <body>
 
     <header>
    <div class="container">
 
+    <div class="langswitch">
+   <a href="index.html" class="active">NL</a>
+   <a href="index-en.html">EN</a>
+   <a href="index-fr.html">FR</a>
+   <a href="index-de.html">DE</a>
+   </div>
+  
+
    <div class="headertop">
-    <div class="logo-left">
-      <img src="Loggo.png" alt="Rhodania 55 logo">
-      </div>
+   <div class="logo-left">
+      <img src="images/Loggo.png" alt="Rhodania 55 logo">
+    </div>
 
   
     <h1 class="title">Rhodania 55-Vakantieappartement in Riederalp</h1>
@@ -23,66 +38,107 @@
   </div>
 
     <nav id="nav">
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
       <a href="appartement.html">Appartement</a>
       <a href="omgeving.html">Omgeving</a>
       <a href="#">Beschikbaarheid</a>
       <a href="#">Contact</a>
     </nav>
 
-     </div>
-      
+    </div>
     </header>
    
    
 
-    <section class="banner">
+    <section class="banner" style="background-image: url('images/appartement.webp');">
    <div class="banner-content">
     <h2>Geniet van de zomer in Riederalp</h2>
     <p>Wandelen, natuur en rust met zicht op de Aletschgletsjer</p>
+     <a href="mailto:RHODANIA55@GMAIL.COM" class="actie-button">
+      Boek uw verblijf
+    </a>
     
   </div>
-   </section>
+  </section>
 
     <section class="info">
   <div class="info-box">
 
     <div class="info-item">
-      <img src="Bed icon.jpg" alt="Slaapkamer">
+      <img src="images/Bed icon.jpg" alt="Slaapkamer">
       <span>1 Slaapkamer</span>
     </div>
 
     <div class="info-item"> 
-      <img src="Shower Icon.jpg" alt="Badkamer">
+      <img src="images/Shower Icon.jpg" alt="Badkamer">
       <span>2 Badkamers</span>
     </div>
 
     <div class="info-item">
-      <img src="downloads (4).jpg" alt="Personen">
+      <img src="images/downloads (4).jpg" alt="Personen">
       <span>2-4 Personen</span>
     </div>
 
     <div class="info-item">
-      <img src="m2icon.jpg" alt="Oppervlakte">
+      <img src="images/m2icon.jpg" alt="Oppervlakte">
       <span>48m² Oppervlakte</span>
     </div>
 
   </div>
-   </section>
+  </section>
+
+ <section class="usp">
+  <h2>Waarom kiezen voor Rhodania 55?</h2>
+
+  <div class="usp-grid">
+
+    <div class="usp-card">
+      <i class="fa-solid fa-person-skiing"></i>
+      <h3>Ski in / Ski out</h3>
+      <p>Direct toegang tot de pistes zonder verplaatsingen.</p>
+    </div>
+
+    <div class="usp-card">
+      <i class="fa-solid fa-mountain"></i>
+      <h3>Panoramisch uitzicht</h3>
+      <p>Elke dag genieten van indrukwekkende Alpenzichten.</p>
+    </div>
+
+    <div class="usp-card">
+      <i class="fa-solid fa-golf-ball-tee"></i>
+      <h3>Zicht op de golfbaan</h3>
+      <p>Perfect gelegen voor zomerse ontspanning.</p>
+    </div>
+
+    <div class="usp-card">
+      <i class="fa-solid fa-couch"></i>
+      <h3>Modern comfort</h3>
+      <p>Stijlvol ingericht met alle voorzieningen.</p>
+    </div>
+
+    <div class="usp-card">
+      <i class="fa-solid fa-tag"></i>
+      <h3>Betaalbare luxe</h3>
+      <p>Toplocatie aan een scherpe prijs.</p>
+    </div>
+
+  </div>
+</section>
 
    <section class="gallery">
    <h2>Het appartement</h2>
 
      <div class="gallery-grid">
-    <img src="woonkamer.webp" alt="Woonkamer" onclick="openImage(this)">
-    <img src="slaapkamer.webp" alt="Slaapkamer" onclick="openImage(this)">
-    <img src="keuken.webp" alt="Keuken" onclick="openImage(this)">
-    <img src="douche.webp" alt="Badkamer" onclick="openImage(this)">
+    <img src="images/woonkamer.webp" alt="Woonkamer" onclick="openImage(this)">
+    <img src="images/slaapkamer.webp" alt="Slaapkamer" onclick="openImage(this)">
+    <img src="images/keuken.webp" alt="Keuken" onclick="openImage(this)">
+    <img src="images/douche.webp" alt="Badkamer" onclick="openImage(this)">
   </div>
 </section>
+
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2752.440413001007!2d8.0300200118278!3d46.380489370983234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478f6fdc9afe27d1%3A0xd3012ea3d7eff517!2sHaus%20Rhodania%20mit%20Matterhornblick%2C%20Riederalp%20Mitte%20-%20One-Bedroom%20Apartment!5e0!3m2!1sen!2sbe!4v1777444709673!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-  
-    <script src="script.js"></script>
+
+<script src="js/script.js"></script>
 </body>
 </html>

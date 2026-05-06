@@ -3,84 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appartement Rhodania 55</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Appartement – Rhodania 55</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon"  href="favicon.ico">
+    
+   <link rel="alternate" hreflang="nl" href="appartement.html">  <!-- helpt Google begrijpen dat je site meertalig is. -->
+   <link rel="alternate" hreflang="en" href="appartement-en.html">
+   <link rel="alternate" hreflang="fr" href="appartement-fr.html">
+   <link rel="alternate" hreflang="de" href="appartement-de.html">
+
 </head>
 <body>
 
-<header>
-  <div class="container">
+  <header>
+    <div class="container">
 
-    <div class="headertop">
-      <div class="logo-left">
-        <img src="Loggo.png" alt="logo">
-      </div>
-
-      <h1>Rhodania 55</h1>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+   <div class="langswitch">
+  <a href="appartement.html" class="active">NL</a>
+  <a href="appartement-en.html">EN</a>
+  <a href="appartement-fr.html">FR</a>
+  <a href="appartement-de.html">DE</a>
+</div>
     </div>
 
-    <nav id="nav">
-      <a href="index.html">Home</a>
-      <a href="appartement.html">Appartement</a>
-      <a href="omgeving.html">Omgeving</a>
-      <a href="#">Beschikbaarheid</a>
-      <a href="#">Contact</a>
-    </nav>
+      <div class="headertop">
+        <div class="logo-left">
+          <img src="images/Loggo.png" alt="Rhodania 55 logo">
+        </div>
+        <h1 class="title">Rhodania 55 – Vakantieappartement in Riederalp</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      </div>
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="appartement.html" class="active">Appartement</a>
+        <a href="omgeving.html">Omgeving</a>
+        <a href="#">Beschikbaarheid</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <!-- BANNER -->
+  <section class="banner" style="background-image: url('images/woonkamer.webp');">
+    <div class="banner-content">
+      <h2>Het Appartement</h2>
+      <p>Comfortabel verblijf voor 2 tot 4 personen</p>
+    </div>
+  </section>
+
+  <!-- INFO BLOKKEN -->
+  <section class="info">
+    <div class="info-box">
+      <div class="info-item">
+        <img src="images/Bed icon.jpg" alt="Slaapkamer">
+        <span>1 Slaapkamer</span>
+      </div>
+      <div class="info-item">
+        <img src="images/Shower Icon.jpg" alt="Badkamer">
+        <span>2 Badkamers</span>
+      </div>
+      <div class="info-item">
+        <img src="images/downloads (4).jpg" alt="Personen">
+        <span>2–4 Personen</span>
+      </div>
+      <div class="info-item">
+        <img src="images/m2icon.jpg" alt="Oppervlakte">
+        <span>48m² Oppervlakte</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BESCHRIJVING -->
+  <section class="appartement-info container">
+    <h2>Prachtig familie appartement met modern interieur en centrale ligging</h2>
+
+    <p>Tussen de langlaufloipe en de trainingslift Alpenrose ligt Appartementengebouw Rhodania.
+    In de zomer verandert de Langlauf-baan in een <strong> prachtige golfbaan</strong> en transformeert de
+    trainingspiste zich tot een <strong> kinderspeeltuin.</strong> Met slechts 30 seconden lopen naar beide
+    toeristische attracties van Riederalp centrum, biedt Rhodania 55 de perfecte locatie voor
+    een ski- of golfvakantie.</p>
+
+    <p>Het appartement ligt op de<strong> eerste verdieping</strong> van het gebouw. Bij binnenkomst vindt u een
+    hal die de slaapkamer, de separate badkamer en het woongedeelte met elkaar verbindt. De
+    open woonkamer biedt een comfortabele tweepersoonsslaapbank, televisie, eethoek en een
+    volledig uitgeruste keuken. De woonkamer biedt toegang tot het balkon op het zuiden met
+    voldoende zitgelegenheid. Vanuit het woongedeelte is de separate badkamer met
+    bad/douchecombinatie en toilet te bereiken. De slaapkamer heeft een en-suite badkamer
+    met inloopdouche en toilet. Verder bestaat de slaapkamer uit een tweepersoonsbed, een
+    kast en een werkruimte.</p>
+  </section>
+
+  <!-- VOORZIENINGEN -->
+  <section class="voorzieningen container">
+    <h2>Voorzieningen</h2>
+    <div class="voorzieningen-grid">
+
+      <div class="voorziening-categorie">
+        <h3> Woonkamer</h3>
+        <ul>
+          <li>comfortabele Tweepersoonsslaapbank</li>
+          <li>smart Televisie</li>
+          <li>Eethoek</li>
+          <li>Toegang tot balkon (zuidzijde)</li>
+        </ul>
+      </div>
+
+      <div class="voorziening-categorie">
+        <h3> Keuken</h3>
+        <ul>
+          <li>Volledig uitgerust</li>
+          <li>Koelkast</li>
+          <li>Kookplaat</li>
+          <li>Koffiezetapparaat</li>
+        </ul>
+      </div>
+
+      <div class="voorziening-categorie">
+        <h3> Slaapkamer</h3>
+        <ul>
+          <li>Tweepersoonsbed</li>
+          <li>ruime Kast</li>
+          <li>Werkruimte</li>
+          <li>En-suite badkamer</li>
+        </ul>
+      </div>
+
+      <div class="voorziening-categorie">
+        <h3> Badkamers</h3>
+        <ul>
+          <li>Bad/douchecombinatie + toilet</li>
+          <li>Inloopdouche + toilet (en-suite)</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOTOGALERIJ -->
+  <section class="gallery container">
+    <h2>Foto's van het appartement</h2>
+    <div class="gallery-grid-large">
+      <img src="images/woonkamer.webp" alt="Woonkamer" onclick="openImage(this)">
+      <img src="images/main.webp" alt="Slaapkamer" onclick="openImage(this)">
+      <img src="images/woonkamer2.webp" alt="Keuken" onclick="openImage(this)">
+      <img src="images/inzicht.webp" alt="Badkamer" onclick="openImage(this)">
+       <img src="images/ruimbinnen.webp" alt="Badkamer" onclick="openImage(this)">
+        <img src="images/zetel.webp" alt="Badkamer" onclick="openImage(this)">
+        <img src="images/rustzetel.webp" alt="Badkamer" onclick="openImage(this)">
+         <img src="images/2bedden.webp" alt="Badkamer" onclick="openImage(this)">
+        <img src="images/slaapkamer.webp" alt="Badkamer" onclick="openImage(this)">
+        <img src="images/douche.webp" alt="Badkamer" onclick="openImage(this)">
+         <img src="images/dkamb.webp" alt="Badkamer" onclick="openImage(this)">
+          <img src="images/b.webp" alt="Badkamer" onclick="openImage(this)">
+           <img src="images/keuken.webp" alt="Badkamer" onclick="openImage(this)">
+            <img src="images/keukendicht.webp" alt="Badkamer" onclick="openImage(this)">
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" onclick="closeLightbox()">
+
+  <span class="arrow left" onclick="prevImage(event)"> ❮ </span>
+  <img id="lightbox-img" src="" alt="">
+  <span class="arrow right" onclick="nextImage(event)"> ❯ </span>
   </div>
-</header>
 
-<!-- INTRO -->
-<section class="intro">
-  <h2>Appartement Rhodania 55</h2>
-  <p>
-    Modern en gezellig appartement in Riederalp, ideaal voor zomer en winter.
-  </p>
-</section>
-
-<!-- INFO -->
-<section class="info">
-  <div class="info-box">
-    <div class="info-item">🛏️ 1 slaapkamer</div>
-    <div class="info-item">🚿 2 badkamers</div>
-    <div class="info-item">👨‍👩‍👧‍👦 2-4 personen</div>
-    <div class="info-item">📐 48m²</div>
-  </div>
-</section>
-
-<!-- BESCHRIJVING -->
-<section class="beschrijving">
-  <h2>Over het appartement</h2>
-
-  <p>
-    Gelegen tussen de langlaufloipe en de trainingslift Alpenrose,
-    op slechts 30 seconden van het centrum van Riederalp.
-  </p>
-
-  <p>
-    In de zomer verandert de omgeving in een golfbaan en speelzone voor kinderen.
-  </p>
-</section>
-
-<!-- FOTO'S -->
-<section class="gallery">
-  <h2>Foto’s</h2>
-
-  <div class="gallery-grid">
-    <img src="woonkamer.webp" onclick="openImage(this)">
-    <img src="slaapkamer.webp" onclick="openImage(this)">
-    <img src="keuken.webp" onclick="openImage(this)">
-    <img src="douche.webp" onclick="openImage(this)">
-  </div>
-</section>
-
-<!-- LIGHTBOX -->
-<div id="lightbox" onclick="closeImage()">
-  <img id="lightbox-img">
-</div>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
