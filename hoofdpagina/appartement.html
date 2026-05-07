@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appartement – Rhodania 55</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon"  href="favicon.ico">
-    
-   <link rel="alternate" hreflang="nl" href="appartement.html">  <!-- helpt Google begrijpen dat je site meertalig is. -->
-   <link rel="alternate" hreflang="en" href="appartement-en.html">
-   <link rel="alternate" hreflang="fr" href="appartement-fr.html">
-   <link rel="alternate" hreflang="de" href="appartement-de.html">
 
+<!-- ============================================================
+     HEAD – meta, stylesheets, hreflang
+     ============================================================ -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appartement – Rhodania 55</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Hreflang: helpt Google begrijpen dat je site meertalig is -->
+  <link rel="alternate" hreflang="nl" href="appartement.html">
+  <link rel="alternate" hreflang="en" href="appartement-en.html">
+  <link rel="alternate" hreflang="fr" href="appartement-fr.html">
+  <link rel="alternate" hreflang="de" href="appartement-de.html">
 </head>
+
 <body>
 
+  <!-- ============================================================
+       HEADER – taalswitch, logo, titel, hamburger, navigatie
+       ============================================================ -->
   <header>
     <div class="container">
 
-   <div class="langswitch">
-  <a href="appartement.html" class="active">NL</a>
-  <a href="appartement-en.html">EN</a>
-  <a href="appartement-fr.html">FR</a>
-  <a href="appartement-de.html">DE</a>
-</div>
-    </div>
+      <!-- Taalwisselaar (rechtsboven) -->
+      <div class="langswitch">
+        <a href="appartement.html" class="active">NL</a>
+        <a href="appartement-en.html">EN</a>
+        <a href="appartement-fr.html">FR</a>
+        <a href="appartement-de.html">DE</a>
+      </div>
 
+      <!-- Bovenste rij: logo | titel | hamburger -->
       <div class="headertop">
         <div class="logo-left">
           <img src="images/Loggo.png" alt="Rhodania 55 logo">
@@ -33,6 +43,8 @@
         <h1 class="title">Rhodania 55 – Vakantieappartement in Riederalp</h1>
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       </div>
+
+      <!-- Hoofdnavigatie -->
       <nav id="nav">
         <a href="index.html">Home</a>
         <a href="appartement.html" class="active">Appartement</a>
@@ -40,10 +52,14 @@
         <a href="#">Beschikbaarheid</a>
         <a href="contact.html">Contact</a>
       </nav>
+
     </div>
   </header>
 
-  <!-- BANNER -->
+
+  <!-- ============================================================
+       BANNER – achtergrondafbeelding
+       ============================================================ -->
   <section class="banner" style="background-image: url('images/woonkamer.webp');">
     <div class="banner-content">
       <h2>Het Appartement</h2>
@@ -51,65 +67,84 @@
     </div>
   </section>
 
-  <!-- INFO BLOKKEN -->
+
+  <!-- ============================================================
+       INFO – slaapkamer, badkamer, personen, oppervlakte
+       ============================================================ -->
   <section class="info">
     <div class="info-box">
+
       <div class="info-item">
         <img src="images/Bed icon.jpg" alt="Slaapkamer">
         <span>1 Slaapkamer</span>
       </div>
+
       <div class="info-item">
         <img src="images/Shower Icon.jpg" alt="Badkamer">
         <span>2 Badkamers</span>
       </div>
+
       <div class="info-item">
         <img src="images/downloads (4).jpg" alt="Personen">
         <span>2–4 Personen</span>
       </div>
+
       <div class="info-item">
         <img src="images/m2icon.jpg" alt="Oppervlakte">
         <span>48m² Oppervlakte</span>
       </div>
+
     </div>
   </section>
 
-  <!-- BESCHRIJVING -->
+
+  <!-- ============================================================
+       BESCHRIJVING – tekst over het appartement
+       ============================================================ -->
   <section class="appartement-info container">
     <h2>Prachtig familie appartement met modern interieur en centrale ligging</h2>
 
-    <p>Tussen de langlaufloipe en de trainingslift Alpenrose ligt Appartementengebouw Rhodania.
-    In de zomer verandert de Langlauf-baan in een <strong> prachtige golfbaan</strong> en transformeert de
-    trainingspiste zich tot een <strong> kinderspeeltuin.</strong> Met slechts 30 seconden lopen naar beide
-    toeristische attracties van Riederalp centrum, biedt Rhodania 55 de perfecte locatie voor
-    een ski- of golfvakantie.</p>
+    <p>
+      Tussen de langlaufloipe en de trainingslift Alpenrose ligt Appartementengebouw Rhodania.
+      In de zomer verandert de Langlauf-baan in een <strong>prachtige golfbaan</strong> en transformeert de
+      trainingspiste zich tot een <strong>kinderspeeltuin.</strong> Met slechts 30 seconden lopen naar beide
+      toeristische attracties van Riederalp centrum, biedt Rhodania 55 de perfecte locatie voor
+      een ski- of golfvakantie.
+    </p>
 
-    <p>Het appartement ligt op de<strong> eerste verdieping</strong> van het gebouw. Bij binnenkomst vindt u een
-    hal die de slaapkamer, de separate badkamer en het woongedeelte met elkaar verbindt. De
-    open woonkamer biedt een comfortabele tweepersoonsslaapbank, televisie, eethoek en een
-    volledig uitgeruste keuken. De woonkamer biedt toegang tot het balkon op het zuiden met
-    voldoende zitgelegenheid. Vanuit het woongedeelte is de separate badkamer met
-    bad/douchecombinatie en toilet te bereiken. De slaapkamer heeft een en-suite badkamer
-    met inloopdouche en toilet. Verder bestaat de slaapkamer uit een tweepersoonsbed, een
-    kast en een werkruimte.</p>
+    <p>
+      Het appartement ligt op de <strong>eerste verdieping</strong> van het gebouw. Bij binnenkomst vindt u een
+      hal die de slaapkamer, de separate badkamer en het woongedeelte met elkaar verbindt. De
+      open woonkamer biedt een comfortabele tweepersoonsslaapbank, televisie, eethoek en een
+      volledig uitgeruste keuken. De woonkamer biedt toegang tot het balkon op het zuiden met
+      voldoende zitgelegenheid. Vanuit het woongedeelte is de separate badkamer met
+      bad/douchecombinatie en toilet te bereiken. De slaapkamer heeft een en-suite badkamer
+      met inloopdouche en toilet. Verder bestaat de slaapkamer uit een tweepersoonsbed, een
+      kast en een werkruimte.
+    </p>
   </section>
 
-  <!-- VOORZIENINGEN -->
+
+  <!-- ============================================================
+       VOORZIENINGEN – per ruimte
+       ============================================================ -->
   <section class="voorzieningen container">
     <h2>Voorzieningen</h2>
+
     <div class="voorzieningen-grid">
 
       <div class="voorziening-categorie">
-        <h3> Woonkamer</h3>
+        <h3>Woonkamer</h3>
         <ul>
-          <li>comfortabele Tweepersoonsslaapbank</li>
-          <li>smart Televisie</li>
+          <li>Comfortabele tweepersoonsslaapbank</li>
+          <li>Smart televisie</li>
           <li>Eethoek</li>
           <li>Toegang tot balkon (zuidzijde)</li>
         </ul>
       </div>
 
       <div class="voorziening-categorie">
-        <h3> Keuken</h3>
+        <h3>Keuken</h3>
         <ul>
           <li>Volledig uitgerust</li>
           <li>Koelkast</li>
@@ -119,17 +154,17 @@
       </div>
 
       <div class="voorziening-categorie">
-        <h3> Slaapkamer</h3>
+        <h3>Slaapkamer</h3>
         <ul>
           <li>Tweepersoonsbed</li>
-          <li>ruime Kast</li>
+          <li>Ruime kast</li>
           <li>Werkruimte</li>
           <li>En-suite badkamer</li>
         </ul>
       </div>
 
       <div class="voorziening-categorie">
-        <h3> Badkamers</h3>
+        <h3>Badkamers</h3>
         <ul>
           <li>Bad/douchecombinatie + toilet</li>
           <li>Inloopdouche + toilet (en-suite)</li>
@@ -139,83 +174,105 @@
     </div>
   </section>
 
-  <!-- FOTOGALERIJ -->
+
+  <!-- ============================================================
+       FOTOGALERIJ – alle foto's van het appartement
+       ============================================================ -->
   <section class="gallery container">
     <h2>Foto's van het appartement</h2>
+
     <div class="gallery-grid-large">
-      <img src="images/woonkamer.webp" alt="Woonkamer" onclick="openImage(this)">
-      <img src="images/main.webp" alt="Slaapkamer" onclick="openImage(this)">
-      <img src="images/woonkamer2.webp" alt="Keuken" onclick="openImage(this)">
-      <img src="images/inzicht.webp" alt="Badkamer" onclick="openImage(this)">
-       <img src="images/ruimbinnen.webp" alt="Badkamer" onclick="openImage(this)">
-        <img src="images/zetel.webp" alt="Badkamer" onclick="openImage(this)">
-        <img src="images/rustzetel.webp" alt="Badkamer" onclick="openImage(this)">
-         <img src="images/2bedden.webp" alt="Badkamer" onclick="openImage(this)">
-        <img src="images/slaapkamer.webp" alt="Badkamer" onclick="openImage(this)">
-        <img src="images/douche.webp" alt="Badkamer" onclick="openImage(this)">
-         <img src="images/dkamb.webp" alt="Badkamer" onclick="openImage(this)">
-          <img src="images/b.webp" alt="Badkamer" onclick="openImage(this)">
-           <img src="images/keuken.webp" alt="Badkamer" onclick="openImage(this)">
-            <img src="images/keukendicht.webp" alt="Badkamer" onclick="openImage(this)">
+      <img src="images/woonkamer.webp"    alt="Woonkamer"  onclick="openImage(this)">
+      <img src="images/main.webp"         alt="Slaapkamer" onclick="openImage(this)">
+      <img src="images/woonkamer2.webp"   alt="Keuken"     onclick="openImage(this)">
+      <img src="images/inzicht.webp"      alt="Inzicht"    onclick="openImage(this)">
+      <img src="images/ruimbinnen.webp"   alt="Ruimte"     onclick="openImage(this)">
+      <img src="images/zetel.webp"        alt="Zetel"      onclick="openImage(this)">
+      <img src="images/rustzetel.webp"    alt="Rustzetel"  onclick="openImage(this)">
+      <img src="images/2bedden.webp"      alt="2 Bedden"   onclick="openImage(this)">
+      <img src="images/slaapkamer.webp"   alt="Slaapkamer" onclick="openImage(this)">
+      <img src="images/douche.webp"       alt="Douche"     onclick="openImage(this)">
+      <img src="images/dkamb.webp"        alt="Badkamer"   onclick="openImage(this)">
+      <img src="images/b.webp"            alt="Bad"        onclick="openImage(this)">
+      <img src="images/keuken.webp"       alt="Keuken"     onclick="openImage(this)">
+      <img src="images/keukendicht.webp"  alt="Keuken"     onclick="openImage(this)">
     </div>
   </section>
 
-  <!-- LIGHTBOX -->
+
+  <!-- ============================================================
+       LIGHTBOX – fullscreen fotoviewer
+       ============================================================ -->
   <div id="lightbox" onclick="closeLightbox()">
-
-  <span class="arrow left" onclick="prevImage(event)"> ❮ </span>
-  <img id="lightbox-img" src="" alt="">
-  <span class="arrow right" onclick="nextImage(event)"> ❯ </span>
-  </div>
-<footer class="footer">
-  <div class="footer-inner">
-
-    <div class="footer-brand">
-      <div class="footer-logo">Rhodania 55</div>
-      <p class="footer-tagline">Vakantieappartement in Riederalp, Zwitserland.<br>Ski-in/ski-out · Golfzicht · Aletschgletsjer</p>
-      
-    </div>
-
-    <div class="footer-nav">
-      <h4>Navigatie</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="appartement.html">Appartement</a></li>
-        <li><a href="omgeving.html">Omgeving</a></li>
-        <li><a href="#">Beschikbaarheid</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-contact">
-      <h4>Contact</h4>
-      <div class="footer-contact-item">
-        <i class="fa-solid fa-envelope"></i>
-        <a href="mailto:rhodania55@gmail.com">rhodania55@gmail.com</a>
-      </div>
-      <div class="footer-contact-item">
-        <i class="fa-solid fa-phone"></i>
-        <a href="tel:0475843778">0475 84 37 78</a>
-      </div>
-      <div class="footer-contact-item">
-        <i class="fa-solid fa-location-dot"></i>
-        <span>Riederalp 55, Zwitserland</span>
-      </div>
-    </div>
-
+    <span class="arrow left"  onclick="prevImage(event)">❮</span>
+    <img id="lightbox-img" src="" alt="">
+    <span class="arrow right" onclick="nextImage(event)">❯</span>
   </div>
 
-  <hr class="footer-divider">
 
-  <div class="footer-bottom">
-    <span>© 2026 Rhodania 55 — Alle rechten voorbehouden</span>
-    <div class="footer-bottom-links">
-      <a href="#">Privacy</a>
-      <a href="#">Voorwaarden</a>
+  <!-- ============================================================
+       FOOTER – merk, navigatie, contactinfo, copyright
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <!-- Naam & beschrijving -->
+      <div class="footer-brand">
+        <div class="footer-logo">Rhodania 55</div>
+        <p class="footer-tagline">
+          Vakantieappartement in Riederalp, Zwitserland.<br>
+          Ski-in/ski-out · Golfzicht · Aletschgletsjer
+        </p>
+      </div>
+
+      <!-- Snelle links -->
+      <div class="footer-nav">
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="appartement.html">Appartement</a></li>
+          <li><a href="omgeving.html">Omgeving</a></li>
+          <li><a href="#">Beschikbaarheid</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contactgegevens -->
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:rhodania55@gmail.com">rhodania55@gmail.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:0475843778">0475 84 37 78</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Riederalp 55, Zwitserland</span>
+        </div>
+      </div>
+
     </div>
-  </div>
-</footer>
 
+    <hr class="footer-divider">
+
+    <!-- Copyright balk -->
+    <div class="footer-bottom">
+      <span>© 2026 Rhodania 55 — Alle rechten voorbehouden</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Voorwaarden</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       JAVASCRIPT
+       ============================================================ -->
   <script src="script.js"></script>
+
 </body>
 </html>

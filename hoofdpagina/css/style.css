@@ -1,10 +1,41 @@
-body{
-    margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-family: Arial, sans-serif;
-    background: rgb(177, 177, 177);
-    overflow-x: hidden;
-    
+/* ============================================================
+   style.css – Rhodania 55
+   Inhoud:
+     1.  Reset & basis
+     2.  Layout – container
+     3.  Logo
+     4.  Navigatie
+     5.  Typografie
+     6.  Header
+     7.  Banner
+     8.  Actieknop
+     9.  Info strip (bed / bad / m² / personen)
+     10. Galerij (kleine grid – homepagina)
+     11. Galerij (grote grid – appartement & omgeving)
+     12. Lightbox
+     13. Taalswitch
+     14. USP-kaartjes
+     15. Appartement – beschrijving & voorzieningen
+     16. Omgeving – intro, activiteiten, USP2, CTA
+     17. Contact
+     18. Footer
+     19. Responsive – mobiel & tablet
+   ============================================================ */
+
+
+/* ============================================================
+   1. RESET & BASIS
+   ============================================================ */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: rgb(177, 177, 177);
+  overflow-x: hidden;
 }
 
 img {
@@ -12,24 +43,34 @@ img {
   height: auto;
 }
 
-.container{
+
+/* ============================================================
+   2. LAYOUT – CONTAINER
+   ============================================================ */
+
+.container {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
   max-width: 1200px;
-  margin: 0 auto ;
-  
+  margin: 0 auto;
 }
 
+
+/* ============================================================
+   3. LOGO
+   ============================================================ */
 
 .logo {
   font-size: 20px;
   font-weight: bold;
   display: flex;
 }
+
 .logo img {
   height: 120px;
 }
+
 .logo-left {
   position: static;
   margin-top: 20px;
@@ -39,60 +80,35 @@ img {
   height: 100px;
 }
 
-nav{
-    margin-top: 2px;
-    text-align: center;
+
+/* ============================================================
+   4. NAVIGATIE
+   ============================================================ */
+
+nav {
+  margin-top: 2px;
+  text-align: center;
 }
 
 nav a {
   margin: 0 15px;
   text-decoration: none;
   color: rgb(0, 0, 0);
+  font-weight: bold;
   flex-direction: column;
-    font-weight: bold;
-    margin: 0 15px;
-}
-
-nav.active {
-  display: flex;
 }
 
 nav a:hover {
   color: #0077cc;
 }
 
-h1{
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: 0;
-  font-size: 28px;
-  color: #430f0f;
+nav a.active {
+  color: #7d7157;
+  border-bottom: 2px solid #7d7157;
 }
 
-.title {
-
-text-align: center;
-  font-size: 35px;
-  font-weight: bold;
-  color: #430f0f;
-}
-
-
-header{
-background-color: rgba(122, 198, 121, 0.6);
-text-align: center;
-padding: 5px 20px;
-border-radius: 10px;
-position: relative;
-z-index: 1000;
-position: sticky;
-  top:0;
-  backdrop-filter:blur(10px);
-}
-
-.headertop{
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
+nav.active {
+  display: flex;
 }
 
 .menu-toggle {
@@ -102,50 +118,50 @@ position: sticky;
 }
 
 
-@media (max-width: 768px) {
-  nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 10px;
-    background: white;
-    width: 200px;
-     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    z-index: 999;
-  }
+/* ============================================================
+   5. TYPOGRAFIE
+   ============================================================ */
 
-  nav.active {
-    display: flex;
-  }
-
-  nav a {
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-    flex-direction: column;
-  }
-
-
-  .menu-toggle{
-    display: block;
-  }
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  font-size: 28px;
+  color: #430f0f;
 }
 
-@media (max-width: 768px) {
-  .banner {
-    height: 250px;
-  }
-
-  .banner h2 {
-    font-size: 22px;
-  }
-
-  .banner p {
-    font-size: 14px;
-  }
+.title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #430f0f;
 }
 
+
+/* ============================================================
+   6. HEADER
+   ============================================================ */
+
+header {
+  background-color: rgba(122, 198, 121, 0.6);
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+}
+
+.headertop {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+
+/* ============================================================
+   7. BANNER
+   ============================================================ */
 
 .banner {
   background-image: url('appartement.webp');
@@ -161,10 +177,9 @@ position: sticky;
 .banner::before {
   content: "";
   position: absolute;
-  
   width: 100%;
   height: 100%;
-  background:rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .banner-content {
@@ -172,7 +187,7 @@ position: sticky;
   color: white;
   text-align: center;
   z-index: 1;
-   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
 }
 
 .banner h2 {
@@ -185,6 +200,11 @@ position: sticky;
   margin-bottom: 20px;
 }
 
+
+/* ============================================================
+   8. ACTIEKNOP
+   ============================================================ */
+
 .actie-button {
   display: inline-block;
   background: linear-gradient(135deg, #7bae74, #5f8f58);
@@ -195,14 +215,18 @@ position: sticky;
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
-  transition: all 0.3s ease;  
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  transition: all 0.3s ease;
 }
 
 .actie-button:hover {
   background: #bdb6ac;
 }
 
+
+/* ============================================================
+   9. INFO STRIP – bed / bad / personen / m²
+   ============================================================ */
 
 .info {
   padding: 30px 20px;
@@ -222,17 +246,15 @@ position: sticky;
   padding: 15px 25px;
   border-radius: 10px;
   font-weight: bold;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   gap: 10px;
-
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 0.6s ease forwards;
 }
-/* ICONS */
+
 .info-item img {
   width: 25px;
   height: 25px;
@@ -241,8 +263,7 @@ position: sticky;
   border-radius: 50%;
 }
 
-
-/* kleine delay per blok */
+/* Kleine animatievertraging per blok */
 .info-item:nth-child(1) { animation-delay: 0.1s; }
 .info-item:nth-child(2) { animation-delay: 0.2s; }
 .info-item:nth-child(3) { animation-delay: 0.3s; }
@@ -256,13 +277,9 @@ position: sticky;
 }
 
 
-
-@media (max-width: 768px) {
-  .info-box {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+/* ============================================================
+   10. GALERIJ – kleine grid (homepagina)
+   ============================================================ */
 
 .gallery {
   padding: 40px 20px;
@@ -278,135 +295,16 @@ position: sticky;
 
 .gallery-grid img {
   width: 100%;
-  height: 250px;       /* fixed height = zoom effect */
-  object-fit: cover;   /* crops + zooms */
-   object-position: 50% 70%;
-}
-
-
-@media (max-width: 768px) {
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 768px) {
-  .gallery-grid img,
-  .gallery-grid-large img {
-    height: 180px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .headertop {
-    grid-template-columns: auto 1fr auto; /* logo | titel | toggle */
-    align-items: center;
-    gap: 8px;
-  }
-
-  .title {
-    text-align: center;
-    justify-self: center;
-    transform: none;
-    font-size: 12px;
-  }
-
-  h1 {
-    font-size: 14px;
-  }
-
-  .logo-left img {
-    height: 55px;
-  }
-  .logo-left {
-    margin-top: 10px;        /* naar boven */
-    margin-left: -10px;   /* meer naar links */
-    align-self: start;    /* uitlijnen bovenaan grid */
-  }
-
-  .menu-toggle {
-    display: block;
-    justify-self: end;
-  }
-}
-
-iframe {
-  width: 100%;
   height: 250px;
-  border-radius: 10px;
+  object-fit: cover;
+  object-position: 50% 70%;
 }
 
 
+/* ============================================================
+   11. GALERIJ – grote grid (appartement & omgeving)
+   ============================================================ */
 
-/* ── APPARTEMENT PAGINA ── */
-
-.appartement-info {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.appartement-info h2 {
-  font-size: 24px;
-  color: #430f0f;
-  margin-bottom: 20px;
-}
-
-.appartement-info p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #444;
-  margin-bottom: 20px;
-}
-
-/* VOORZIENINGEN */
-.voorzieningen {
-  padding: 40px 20px;
-  background: #f5f5f5;
-}
-
-.voorzieningen h2 {
-  text-align: center;
-  font-size: 24px;
-  color: #430f0f;
-  margin-bottom: 30px;
-}
-
-.voorzieningen-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.voorziening-categorie {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.voorziening-categorie h3 {
-  margin-bottom: 10px;
-  color: #430f0f;
-  font-size: 16px;
-}
-
-.voorziening-categorie ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.voorziening-categorie ul li {
-  padding: 4px 0;
-  font-size: 14px;
-  color: #555;
-  border-bottom: 1px solid #eee;
-}
-
-/* GROTE GALERIJ */
 .gallery-grid-large {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -426,12 +324,16 @@ iframe {
   transform: scale(1.02);
 }
 
-/* LIGHTBOX */
+
+/* ============================================================
+   12. LIGHTBOX – fullscreen fotoviewer
+   ============================================================ */
+
 #lightbox {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0, 0, 0, 0.85);
   z-index: 9999;
   align-items: center;
   justify-content: center;
@@ -448,23 +350,6 @@ iframe {
   border-radius: 10px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .voorzieningen-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-grid-large {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Actieve nav link */
-nav a.active {
-  color: #7d7157;
-  border-bottom: 2px solid #7d7157;
-}
-
 .arrow {
   position: absolute;
   top: 50%;
@@ -476,20 +361,18 @@ nav a.active {
   user-select: none;
 }
 
-.arrow.left {
-  left: 20px;
-}
-
-.arrow.right {
-  right: 20px;
-}
+.arrow.left  { left: 20px; }
+.arrow.right { right: 20px; }
 
 .arrow:hover {
   color: #ccc;
 }
 
 
-/*taal switch*/
+/* ============================================================
+   13. TAALSWITCH
+   ============================================================ */
+
 .langswitch {
   position: absolute;
   top: 10px;
@@ -501,8 +384,7 @@ nav a.active {
   text-decoration: none;
   font-weight: bold;
   color: black;
-    transition: color 0.3s ease;
-    
+  transition: color 0.3s ease;
 }
 
 .langswitch a:hover {
@@ -514,6 +396,10 @@ nav a.active {
   font-weight: bold;
 }
 
+
+/* ============================================================
+   14. USP-KAARTJES
+   ============================================================ */
 
 .usp {
   padding: 80px 20px;
@@ -539,7 +425,7 @@ nav a.active {
   background: white;
   padding: 35px 25px;
   border-radius: 18px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   transition: 0.3s ease;
 }
 
@@ -553,6 +439,7 @@ nav a.active {
   margin-bottom: 20px;
   display: block;
 }
+
 .usp-card h3 {
   color: #430f0f;
   margin-bottom: 12px;
@@ -567,6 +454,81 @@ nav a.active {
   transform: scale(1.1);
   transition: 0.3s ease;
 }
+
+
+/* ============================================================
+   15. APPARTEMENT – beschrijving & voorzieningen
+   ============================================================ */
+
+.appartement-info {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.appartement-info h2 {
+  font-size: 24px;
+  color: #430f0f;
+  margin-bottom: 20px;
+}
+
+.appartement-info p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.voorzieningen {
+  padding: 40px 20px;
+  background: #f5f5f5;
+}
+
+.voorzieningen h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #430f0f;
+  margin-bottom: 30px;
+}
+
+.voorzieningen-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.voorziening-categorie {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.voorziening-categorie h3 {
+  margin-bottom: 10px;
+  color: #430f0f;
+  font-size: 16px;
+}
+
+.voorziening-categorie ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.voorziening-categorie ul li {
+  padding: 4px 0;
+  font-size: 14px;
+  color: #555;
+  border-bottom: 1px solid #eee;
+}
+
+
+/* ============================================================
+   16. OMGEVING – intro, activiteiten, USP2, CTA
+   ============================================================ */
 
 .omgeving-intro {
   text-align: center;
@@ -589,7 +551,7 @@ nav a.active {
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .activiteit-card img {
@@ -612,7 +574,6 @@ nav a.active {
   text-align: center;
   padding: 60px 20px;
 }
-
 
 .usp2 {
   background: white;
@@ -642,7 +603,6 @@ nav a.active {
   color: #333;
 }
 
-/* icon */
 .usp2 li::before {
   content: "✔";
   position: absolute;
@@ -651,6 +611,11 @@ nav a.active {
   color: #7bae74;
   font-weight: bold;
 }
+
+
+/* ============================================================
+   17. CONTACT
+   ============================================================ */
 
 .contact-info a {
   color: #5f8f58;
@@ -667,7 +632,11 @@ nav a.active {
 }
 
 
-  .footer {
+/* ============================================================
+   18. FOOTER
+   ============================================================ */
+
+.footer {
   background: linear-gradient(135deg, #2e2e2e 0%, #3d3d3d 50%, #2a3d2a 100%);
   color: #ccc;
   margin-top: 60px;
@@ -697,7 +666,6 @@ nav a.active {
   line-height: 1.7;
   margin: 0 0 20px;
 }
-
 
 .footer-nav h4,
 .footer-contact h4 {
@@ -736,8 +704,8 @@ nav a.active {
   transition: transform 0.2s ease;
 }
 
-.footer-nav ul li a:hover { color: #fff; }
-.footer-nav ul li a:hover::before { transform: translateX(3px); }
+.footer-nav ul li a:hover          { color: #fff; }
+.footer-nav ul li a:hover::before  { transform: translateX(3px); }
 
 .footer-contact-item {
   display: flex;
@@ -768,7 +736,7 @@ nav a.active {
   max-width: 1200px;
   margin: 0 auto;
   border: none;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-bottom {
@@ -795,79 +763,80 @@ nav a.active {
 
 .footer-bottom-links a:hover { color: #aaa; }
 
-/* Responsive footer */
-@media (max-width: 900px) {
-  .footer-inner {
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-  }
-  .footer-brand { grid-column: 1 / -1; }
+/* Google Maps iframe */
+iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
 }
 
-@media (max-width: 560px) {
-  .footer-inner {
-    grid-template-columns: 1fr;
-    padding: 40px 24px 24px;
-    gap: 36px;
-  }
-  .footer-brand { grid-column: auto; }
-  .footer-bottom {
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
-    padding: 16px 24px;
-  }
-  .footer-bottom-links { justify-content: center; flex-wrap: wrap; }
-}
-
-/* Activiteiten grid (omgeving) */
-@media (max-width: 900px) {
-  .activiteiten-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 560px) {
-  .activiteiten-grid { grid-template-columns: 1fr; }
-  .activiteit-card img { height: 180px; }
-}
-
-/* Info strip op telefoon */
-@media (max-width: 600px) {
-  .info-box {
-    flex-direction: column;
-    align-items: center;
-  }
-  .info-item { width: 100%; max-width: 320px; justify-content: center; }
-}
-
-/* USP grid op telefoon */
-@media (max-width: 600px) {
-  .usp { padding: 50px 16px; }
-  .usp h2 { font-size: 26px; margin-bottom: 30px; }
-  .usp-grid { grid-template-columns: 1fr; }
-}
-
-/* Knop kleiner op telefoon */
-@media (max-width: 768px) {
-  .actie-button { font-size: 16px; padding: 12px 28px; }
-}
 
 /* ============================================================
-   PLAK DIT ONDERAAN je bestaande style (2).css
+   19. RESPONSIVE – mobiel & tablet
    ============================================================ */
 
-/* Stop horizontale scroll — html mist nog overflow-x:hidden */
-html {
-  overflow-x: hidden;
-}
-
-/* Header border-radius op sticky element veroorzaakt overflow */
+/* --- Header & navigatie (≤ 768px) --- */
 @media (max-width: 768px) {
   header {
     border-radius: 0;
   }
-}
 
-/* Langswitch absolute → valt buiten header op mobile */
-@media (max-width: 768px) {
+  .headertop {
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .title {
+    text-align: center;
+    justify-self: center;
+    transform: none;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 14px;
+  }
+
+  .logo-left img {
+    height: 55px;
+  }
+
+  .logo-left {
+    margin-top: 10px;
+    margin-left: -10px;
+    align-self: start;
+  }
+
+  .menu-toggle {
+    display: block;
+    justify-self: end;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    flex-direction: column;
+  }
+
   .langswitch {
     position: static;
     display: flex;
@@ -876,15 +845,131 @@ html {
   }
 }
 
-/* Nav dropdown: top:70px is vast, maar header hoogte varieert.
-   top:100% plakt altijd aan onderkant van de sticky header.  */
+/* --- Banner (≤ 768px) --- */
 @media (max-width: 768px) {
-  nav {
-    top: 100%;
-    left: 0;
-    right: 0;
-    width: 100%;
-    border-radius: 0 0 10px 10px;
+  .banner {
+    height: 250px;
+  }
+
+  .banner h2 {
+    font-size: 22px;
+  }
+
+  .banner p {
+    font-size: 14px;
   }
 }
 
+/* --- Actieknop (≤ 768px) --- */
+@media (max-width: 768px) {
+  .actie-button {
+    font-size: 16px;
+    padding: 12px 28px;
+  }
+}
+
+/* --- Galerij (≤ 768px) --- */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid img,
+  .gallery-grid-large img {
+    height: 180px;
+  }
+
+  .gallery-grid-large {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Info strip (≤ 600px) --- */
+@media (max-width: 600px) {
+  .info-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-item {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+}
+
+/* --- USP-grid (≤ 600px) --- */
+@media (max-width: 600px) {
+  .usp {
+    padding: 50px 16px;
+  }
+
+  .usp h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .usp-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Voorzieningen (≤ 768px) --- */
+@media (max-width: 768px) {
+  .voorzieningen-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Activiteiten (≤ 900px en ≤ 560px) --- */
+@media (max-width: 900px) {
+  .activiteiten-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .activiteiten-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activiteit-card img {
+    height: 180px;
+  }
+}
+
+/* --- Footer (≤ 900px en ≤ 560px) --- */
+@media (max-width: 900px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    padding: 40px 24px 24px;
+    gap: 36px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 16px 24px;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
