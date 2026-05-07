@@ -1,17 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
-</head>
-<body>
-    
- <h2>Reserveren</h2>
-<p>Voor prijzen en beschikbaarheid, stuur een e-mail naar:</p>
+<html lang="nl">
 
-<a href="mailto:RHODANIA55@GMAIL.COM">
-  RHODANIA55@GMAIL.COM
-</a>
+<!-- ============================================================
+     HEAD – meta, stylesheets, hreflang
+     ============================================================ -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Rhodania 55</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Hreflang: helpt Google begrijpen dat je site meertalig is -->
+  <link rel="alternate" hreflang="nl" href="contact.html">
+  <link rel="alternate" hreflang="en" href="contact-en.html">
+  <link rel="alternate" hreflang="fr" href="contact-fr.html">
+  <link rel="alternate" hreflang="de" href="contact-de.html">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER – taalswitch, logo, titel, hamburger, navigatie
+       ============================================================ -->
+  <header>
+    <div class="container">
+
+      <!-- Taalwisselaar (rechtsboven) -->
+      <div class="langswitch">
+        <a href="contact.html" class="active">NL</a>
+        <a href="contact-en.html">EN</a>
+        <a href="contact-fr.html">FR</a>
+        <a href="contact-de.html">DE</a>
+      </div>
+
+      <!-- Bovenste rij: logo | titel | hamburger -->
+      <div class="headertop">
+        <div class="logo-left">
+          <img src="images/Loggo.png" alt="Rhodania 55 logo">
+        </div>
+        <h1 class="title">Rhodania 55 – Contact</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      </div>
+
+      <!-- Hoofdnavigatie -->
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="appartement.html">Appartement</a>
+        <a href="omgeving.html">Omgeving</a>
+        <a href="#">Beschikbaarheid</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       BANNER – achtergrondafbeelding
+       ============================================================ -->
+  <section class="banner" style="background-image: url('images/wijk.jpg');">
+    <div class="banner-content">
+      <h2>Contacteer ons</h2>
+      <p>Heb je vragen of wil je boeken? Neem gerust contact op.</p>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT – gegevens en e-mailknop
+       ============================================================ -->
+  <section class="contact container">
+    <h2>Neem contact op</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+
+        <p><strong>Email:</strong> rhodania55@gmail.com</p>
+
+        <p>
+          <strong>Telefoon:</strong>
+          <a href="tel:0475843778">0475 84 37 78</a>
+        </p>
+
+        <p><strong>Locatie:</strong> Riederalp 55, Zwitserland</p>
+
+        <a href="mailto:rhodania55@gmail.com" class="actie-button">
+          Stuur een e-mail
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER – merk, navigatie, contactinfo, copyright
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <!-- Naam & beschrijving -->
+      <div class="footer-brand">
+        <div class="footer-logo">Rhodania 55</div>
+        <p class="footer-tagline">
+          Vakantieappartement in Riederalp, Zwitserland.<br>
+          Ski-in/ski-out · Golfzicht · Aletschgletsjer
+        </p>
+      </div>
+
+      <!-- Snelle links -->
+      <div class="footer-nav">
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="appartement.html">Appartement</a></li>
+          <li><a href="omgeving.html">Omgeving</a></li>
+          <li><a href="#">Beschikbaarheid</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contactgegevens -->
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:rhodania55@gmail.com">rhodania55@gmail.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:0475843778">0475 84 37 78</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Riederalp 55, Zwitserland</span>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider">
+
+    <!-- Copyright balk -->
+    <div class="footer-bottom">
+      <span>© 2026 Rhodania 55 — Alle rechten voorbehouden</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Voorwaarden</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       JAVASCRIPT
+       ============================================================ -->
+  <script src="script.js"></script>
+
 </body>
 </html>
